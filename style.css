@@ -1,0 +1,169 @@
+/* 전체 기본 설정 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF8F0;
+    color: #5C3D2E;
+}
+
+/* 상단 헤더 */
+header {
+    background-color: #E8590C;
+    color: white;
+    padding: 25px 5%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 메인 영역 */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* 가게 정보 */
+main section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 가게 소개와 위치 */
+.restaurant-info {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.restaurant-image {
+    flex: 1;
+    min-height: 250px;
+    background-color: #F3EDE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.info-text {
+    flex: 1;
+}
+
+/* 추천 메뉴 */
+.menu-section h3 {
+    color: #E8590C;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px;
+    background-color: #FFF0E5;
+    border-radius: 10px;
+}
+
+/* 링크 */
+a {
+    color: #E8590C;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #E8590C;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+/* 하단 */
+footer {
+    background-color: #5C3D2E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 휴대폰 반응형 */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    main section {
+        padding: 18px;
+    }
+
+    .restaurant-info {
+        flex-direction: column;
+    }
+
+    .restaurant-image,
+    .info-text {
+        width: 100%;
+    }
+
+    .restaurant-image {
+        min-height: 200px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+}
