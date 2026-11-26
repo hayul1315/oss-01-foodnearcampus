@@ -10,7 +10,7 @@
 -main에다가 절대로 commit하지 않음!!
 
 
-## 페이지 수겅
+## 페이지 구성
 -메인 표지 페이지: 위의 바(홈, korean, western, dessert), 3개 상자 (korean, western, dessert), 밑의 감사합니다 코멘트(주제 선정 및 출처)
 
 
