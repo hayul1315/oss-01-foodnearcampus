@@ -66,12 +66,20 @@ main section {
 }
 
 .restaurant-image {
-    flex: 1;
+    flex: 0 0 40%;
     min-height: 250px;
     background-color: #F3EDE5;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.restaurant-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
     border-radius: 12px;
 }
 
@@ -159,9 +167,11 @@ footer {
         width: 100%;
     }
 
-    .restaurant-image {
-        min-height: 200px;
-    }
+   restaurant-image {
+    width: 100%;
+    min-height: 200px;
+    height: 200px;
+}
 
     .menu-item {
         font-size: 14px;
