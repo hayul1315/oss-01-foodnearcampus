@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타벅스 안산한양대점 - 한양대 맛집</title>
+  <!-- 꾸미기는 css 폴더 안 style.css 파일에서(모든 페이지 공통) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 1. 머리말(header) + 메뉴바(nav): 모든 페이지 공통 ===== -->
+  <header class="site-header">
+    <a href="index.html" class="logo">한양대 맛집</a>
+    <nav class="menu">
+      <a href="hansik.html">한식</a>
+      <a href="yangsik.html">양식</a>
+      <a href="dessert.html">디저트</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== 2. 가게 이름 ===== -->
+    <h1 class="store-name">스타벅스 안산한양대점</h1>
+
+    <!-- ===== 3. 왼쪽 사진 + 오른쪽 정보 (Flexbox로 나란히) ===== -->
+    <section class="store-top">
+
+      <!-- 왼쪽: 가게 사진 (images 폴더에 사진 넣기) -->
+      <img class="store-photo" src="images/starbucks.jpg" alt="스타벅스 안산한양대점 매장 사진">
+
+      <!-- 오른쪽: 가게 정보 (한 줄 = li 하나) -->
+      <ul class="info">
+        <li><strong>추천 이유</strong> 공부, 팀프로젝트 가능</li>
+        <li><strong>영업시간</strong> 07:00 ~ 21:00</li>
+        <li><strong>위치</strong> <a href="https://naver.me/xv3eJ4Ct" target="_blank">네이버 지도에서 보기</a></li>
+        <li>
+          <strong>추천 메뉴</strong>
+          <!-- 추천 메뉴와 가격은 표(table)로 정리 -->
+          <table class="menu-table">
+            <tr>
+              <th>메뉴</th>
+              <th>가격</th>
+            </tr>
+            <tr>
+              <td>스크램블 에그 베이컨 샌드위치</td>
+              <td>5,700원</td>
+            </tr>
+            <tr>
+              <td>자바칩 프라푸치노 (Grande)</td>
+              <td>7,100원</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== 4. 아래: 추천 대표메뉴  ===== -->
+    <section class="store-bottom">
+      <figure>
+        <img src="images/starbucks-menu.jpg" alt="스타벅스 안산한양대점 메뉴판">
+        <figcaption>메뉴판</figcaption>
+      </figure>
+      <figure>
+        <img src="images/starbucks-best.jpg" alt="스타벅스 대표메뉴 자바칩 프라푸치노">
+        <figcaption>대표메뉴</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <!-- ===== 5. 꼬리말(footer): 모든 페이지 똑같이 ===== -->
+  <footer class="site-footer">
+    <p>한양대 맛집 | 1조</p>
+    <p>이미지 출처: 직접 촬영 / 네이버 지도</p>
+  </footer>
+
+</body>
+</html>
